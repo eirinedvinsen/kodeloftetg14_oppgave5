@@ -35,6 +35,11 @@ body {
   gap: 10px;
 }
 
+a{
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
 
 img {
   max-width: 50%;
@@ -56,7 +61,7 @@ img {
 
 .dark {
   background-color: black;
-  color: white;
+  color: var(--primaryColor);
 }
 
 /* HEADER */
