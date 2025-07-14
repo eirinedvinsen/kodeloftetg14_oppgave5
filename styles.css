@@ -27,6 +27,15 @@ body {
   font-family: var(--fontFamily);
 }
 
+.sectionNineteen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
 img {
   max-width: 50%;
 }

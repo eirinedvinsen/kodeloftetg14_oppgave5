@@ -20,3 +20,17 @@ sunIcon.addEventListener("click", function () {
   body.classList.remove("light");
   body.classList.add("dark");
 });
+
+async function httpCats (){
+  const response = await fetch("https://http.cat/[status_code].jpg");
+  console.log(response);
+}
+
+httpCats();
+
+async function randomFox () {
+  const fox = await fetch ("https://randomfox.ca/images/26.jpg");
+  console.log(fox);
+}
+
+randomFox()
