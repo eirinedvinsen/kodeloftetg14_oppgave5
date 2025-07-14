@@ -11,10 +11,10 @@ hamburgerIcon.addEventListener("click", function () {
   navList.classList.add("navList");
 });
 
-const sunIcon = document.querySelector("#sunIcon");
-console.log(sunIcon);
+const foxIcon = document.querySelector("#foxIcon");
+console.log(foxIcon);
 
-sunIcon.addEventListener("click", function () {
+foxIcon.addEventListener("click", function () {
   const body = document.querySelector("body");
 
   body.classList.remove("light");
