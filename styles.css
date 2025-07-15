@@ -121,6 +121,7 @@ img {
 
 /* MEDIA */
 @media (max-width: 426px) {
+  .header
   .sectionImg,
   .sectionFacts,
   .footer {
@@ -129,3 +130,4 @@ img {
     padding: 8px;
   }
 }
+/* Header responsive is 404 */
