@@ -48,3 +48,6 @@ async function randomFox() {
 
 randomFox();
 
+refreshFox.addEventListener('click', randomFox);
+console.log("button clicked!")
+
