@@ -28,11 +28,10 @@ body {
 }
 
 .sectionNineteen {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  height: 80vh;
 }
 
 a{
