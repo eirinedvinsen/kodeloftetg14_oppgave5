@@ -33,10 +33,19 @@ foxIcon.addEventListener("click", function () {
 
 //httpCats();
 
-async function randomFox () {
-  const fox = await fetch ("https://randomfox.ca/images/26.jpg");
-  console.log(fox);
+async function randomFox() {
+  try {
+    const response = await fetch("https://randomfox.ca/floof/");
+    console.log(response);
+
+    const data = await response.json(); // Corrected variable name here
+    console.log(data);
+
+    document.getElementById("foxImage").src = data.image;
+  } catch (error) {
+    console.error("No fox for you :(", error);
+  }
 }
 
-randomFox()
+randomFox();
 
