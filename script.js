@@ -43,6 +43,7 @@ async function randomFox() {
     document.getElementById("foxImage").src = data.image;
   } catch (error) {
     console.error("No fox for you :(", error);
+    document.getElementById("foxImage").alt = "Foxes are sleeping...";
   }
 }
 
