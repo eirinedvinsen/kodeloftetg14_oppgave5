@@ -27,7 +27,7 @@ body {
   font-family: var(--fontFamily);
 }
 
-.sectionNineteen {
+.sectionCenter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@ img {
   justify-content: space-between;
   padding: 0 16px;
   background-color: rgb(31, 30, 30);
-  height: 60px;
+  height: 100px;
 }
 
 .headerIcon {
@@ -85,11 +85,21 @@ img {
 }
 
 /* Nav */
+
+.headerNav{
+  padding: 30px;
+  /*not good but better*/
+}
+
 .navList {
+  transform: rotate(45deg);
+  transform-origin: top left; 
+  transition: transform 0.3s ease; 
+  padding: 10px;
   display: flex;
   align-items: center;
   gap: 20px;
-  list-style: none;
+  list-style: none; 
 }
 
 /* MAIN */
@@ -111,9 +121,9 @@ img {
 
 /* MEDIA */
 @media (max-width: 426px) {
-  .sectionHero,
-  .sectionAbout,
-  .sectionProjects {
+  .sectionImg,
+  .sectionFacts,
+  .footer {
     flex-direction: column;
     gap: 8px;
     padding: 8px;

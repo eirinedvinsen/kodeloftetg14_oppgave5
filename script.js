@@ -7,8 +7,13 @@ hamburgerIcon.addEventListener("click", function () {
   const navList = document.querySelector("#navList");
   console.log(navList);
 
-  navList.classList.remove("hidden");
-  navList.classList.add("navList");
+  if(navList.classList.contains("hidden")){
+    navList.classList.remove("hidden");
+    navList.classList.add("navList");
+  } else{
+    navList.classList.remove("navList");
+    navList.classList.add("hidden");
+  }
 });
 
 const foxIcon = document.querySelector("#foxIcon");
@@ -26,12 +31,6 @@ foxIcon.addEventListener("click", function () {
   }
 });
 
-//async function httpCats (){
-  //const response = await fetch("https://http.cat/[status_code].jpg");
-  //console.log(response);
-//}
-
-//httpCats();
 
 async function randomFox() {
   try {
